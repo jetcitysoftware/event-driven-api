@@ -16,11 +16,11 @@
   "author": "John Cokos",
   "license": "MIT",
   "dependencies": {
-    "base-64": "^0.1.0",
-    "object-hash": "^2.0.3",
+    "base-64": "^1.0.0",
+    "object-hash": "^3.0.0",
     "querystring": "^0.2.0",
     "route-parser": "0.0.5",
-    "url": "^0.11.0",
-    "uuid": "^8.2.0"
+    "url": "^0.11.4",
+    "uuid": "^11.0.2"
   }
 }
