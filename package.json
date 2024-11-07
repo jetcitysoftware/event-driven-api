@@ -1,0 +1,26 @@
+{
+  "name": "event-driven-api",
+  "version": "1.0.0",
+  "description": "An Event Driven API Server Builder",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "event",
+    "node"
+  ],
+  "author": "John Cokos",
+  "license": "MIT",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "object-hash": "^2.0.3",
+    "querystring": "^0.2.0",
+    "route-parser": "0.0.5",
+    "url": "^0.11.0",
+    "uuid": "^8.2.0"
+  }
+}

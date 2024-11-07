@@ -1,0 +1,40 @@
+API Server:
+  ☐ Make sure you can't register a listener (method/path) twice
+  ✔ Route parameters @done (8/6/2020, 1:44:10 AM)
+  ☐ Error Route
+  ☐ 404 Handling
+  ☐ Logging
+  ☐ Middleware
+  ☐ Auth
+  ☐ Dynamic Loading of route modules in all languages
+  ☐ DB / ORM ... do we want to force this?
+  ☐ GraphQL
+  ☐ Routing tables in DB / Filesystem
+    ☐ lets you make a system like AWS
+    ☐ pre-load all code (warming)
+    ☐ Dynamically refresh/flush the routes
+  ☐ Cache option for output
+    ☐ Routes can declare themselves as cache-able with a flag
+    ☐ Calling a route with a ?cacheClear arg clears the cache
+    ☐ Can we also initiate that internally by some other means
+    ☐ https://redis.js.org
+  ☐ Running code in any language securely
+  ☐ Support HTTP2
+  ☐ SSL
+
+Management/Tools:
+  ☐ Test framework for routes
+  ☐ Include fetch cli for testing
+  ☐ UI to manage routes/configs
+  ☐ UI to manage cache
+  ☐ Access/Error Logging
+    ☐ Current Running Instance
+    ☐ History
+  ☐ Swagger Gen from all routes as well as any model?
+
+
+  --- Routing
+NOTE: This doesn't automatically prioritize non-parameterized routes will need to push to the array in some sort of good order...
+routes.push( new Route("/api/v1/categories") );
+routes.push( new Route("/api/v1/:model") );
+routes.push( new Route("/api/v1/:model/:id") );
